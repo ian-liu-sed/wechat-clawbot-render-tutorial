@@ -1,6 +1,6 @@
 # 微信接入 ClawBot 教程（静态站点）
 
-我们的教程部署在render.com [DeepSeek-Weichat-clawbot-Tutorial](https://wechat-clawbot-render-tutorial.onrender.com)
+我们的教程部署在render.com [DeepSeek-Weichat-clawbot-Tutorial](https://wechat-Clawbot-render-tutorial.onrender.com)
 
 ## 教程正文在哪里
 
