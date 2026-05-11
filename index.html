@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>微信接入 ClawBot 部署教程</title>
+    <meta
+      name="description"
+      content="从架构、前置条件、公众平台配置到联调与排错，系统说明如何将微信消息接入 ClawBot（OpenClaw 网关）链路。"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1>微信接入 ClawBot 部署教程</h1>
+      </div>
+    </header>
+
+    <main class="container doc" id="top">
+
+
+
+      <h2 id="clawbot-side">1. ClawBot / OpenClaw 侧准备</h2>
+      <h3>1.1 电脑端本地安装OpenClaw</h3>
+      
+      <pre><code># 安装好openclaw并配置好deepseek-V4作为默认模型之后(目前deepseek可以和clawbot配合地很好，回答令人满意)，
+建议用CCSwitch来配置模型，不进入openclaw终端来设置，运行以下代码：
+
+npx -y @tencent-weixin/openclaw-weixin-cli@latest install
+
+这两步选择性运行，如果上一步代码运行后，没有二维码跳出来的话，可以试着运行看日志：
+
+openclaw gateway run
+
+openclaw dashboard
+</code></pre>
+      <h3>1.2 与微信对接时后的结果</h3>
+      <ul>
+        <li>电脑终端会跳出一个二维码，用自己的微信扫描一下，配置中，连上以后，本地电脑目前不能关。然后就可以聊天了，你给它取个名字，然后它回答你的问题，思考模型比较拟人化，更像人在回答，不是通用模型单一回复。比如你好呀，我是助手呀之类的。</li>
+      </ul>
+
+     
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+      </div>
+    </footer>
+  </body>
+</html>

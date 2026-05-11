@@ -1,0 +1,7 @@
+# Static site: index.html at repo root, assets under styles/
+services:
+  - type: web
+    name: wechat-clawbot-tutorial-static
+    runtime: static
+    staticPublishPath: .
+    buildCommand: "echo ok"
